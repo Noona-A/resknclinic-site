@@ -30,9 +30,13 @@
 			background: #ffffff;
 		}
 		.hb-navigationarea {
-			background: linear-gradient(to right, #6b4a7a 0%, #c87137 50%, #6b4a7a 100%);
+			background: linear-gradient(to right, #c87137 0%, #a65980 50%, #6b4a7a 100%);
 		}
 		.hb-navigation > ul > li a {
+			color: #ffffff;
+		}
+		.hb-navigation > ul > li.current-menu-item a,
+		.hb-navigation > ul > li:hover a {
 			color: #ffffff;
 		}
 		.hb-info li, .hb-info li a {
@@ -103,6 +107,11 @@
 		.hb-topbar .hb-btn {
 			display: flex;
 			align-items: center;
+		}
+		
+		/* Change "Why Choose" text color to orange */
+		.hb-sectiontitle h2 span {
+			color: #c87137;
 		}
 	</style>
 </head>
