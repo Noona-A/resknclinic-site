@@ -15,25 +15,28 @@
 	<link rel="stylesheet" href="css/responsive.css">
 	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 	<style>
-		/* Custom color scheme matching ReSKN logo */
+		/* Custom darker color scheme matching ReSKN logo */
 		.hb-btn, .hb-socialicons li a {
-			background: linear-gradient(to right, #9b7ab8 0%, #f4a460 50%, #9b7ab8 100%);
+			background: linear-gradient(to right, #6b4a7a 0%, #c87137 50%, #6b4a7a 100%);
 			background-size: 200% auto;
 		}
 		.hb-btn:hover, .hb-socialicons li a:hover {
 			background-position: right center;
 		}
 		.hb-paradiseiconbox {
-			background: linear-gradient(to right, #f4a460 0%, #d291bc 50%, #9b7ab8 100%);
+			background: linear-gradient(to right, #c87137 0%, #a65980 50%, #6b4a7a 100%);
 		}
 		.hb-header.v2 {
 			background: #ffffff;
 		}
 		.hb-navigationarea {
-			background: linear-gradient(to right, #9b7ab8 0%, #f4a460 50%, #9b7ab8 100%);
+			background: linear-gradient(to right, #6b4a7a 0%, #c87137 50%, #6b4a7a 100%);
 		}
 		.hb-navigation > ul > li a {
 			color: #ffffff;
+		}
+		.hb-info li, .hb-info li a {
+			color: #2d2c40;
 		}
 		.hb-searcharea a {
 			color: #ffffff;
@@ -43,7 +46,51 @@
 			height: auto;
 		}
 		.hb-pricingbox.active, .hb-pricingbox:hover {
-			background: linear-gradient(to bottom, #9b7ab8 0%, #d291bc 100%);
+			background: linear-gradient(to bottom, #6b4a7a 0%, #a65980 100%);
+		}
+		
+		/* Hero section styling */
+		.hb-hero-section {
+			padding: 80px 0 60px;
+			text-align: center;
+			background: #f9f9f9;
+		}
+		.hb-hero-image {
+			max-width: 800px;
+			margin: 0 auto 50px;
+			border-radius: 10px;
+			overflow: hidden;
+			box-shadow: 0px 21px 50px rgba(0, 0, 0, 0.15);
+		}
+		.hb-hero-image img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+		.hb-hero-content {
+			max-width: 800px;
+			margin: 0 auto;
+		}
+		.hb-hero-content h1 {
+			font-size: 48px;
+			line-height: 56px;
+			color: #2d2c40;
+			font-weight: 500;
+			margin: 0 0 20px;
+		}
+		.hb-hero-content h1 span {
+			font-size: 28px;
+			line-height: 36px;
+			display: block;
+			color: #6b4a7a;
+			font-family: "Arizonia", cursive;
+			margin-bottom: 10px;
+		}
+		.hb-hero-content .hb-description {
+			font-size: 18px;
+			line-height: 28px;
+			color: #7a7992;
+			margin: 0 0 30px;
 		}
 	</style>
 </head>
@@ -114,48 +161,28 @@
 			</div>
 		</div>
 
-		<div id="hb-homeslider2" class="hb-homeslider v2 owl-carousel owl-theme hb-haslayout">
-			<div class="item">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12">
-							<div class="hb-slidercontent-area">
-								<figure class="hb-sliderimg">
-									<img src="https://via.placeholder.com/640x650" alt="Laser hair removal treatment">
-									<figcaption class="hb-slidercontent">
-										<h1><span>Professional</span>Laser Hair Removal</h1>
-										<div class="hb-description">
-											<p>Clinically proven diode laser technology for permanent hair reduction.</p>
-										</div>
-										<a href="https://www.treatwell.co.uk/place/reskn-clinic/" target="_blank" class="hb-btn">Book Free Trial</a>
-									</figcaption>
-								</figure>
+		<section class="hb-hero-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="hb-hero-image">
+							<img src="images/hero-laser-treatment.jpg" alt="Professional laser hair removal treatment">
+						</div>
+						<div class="hb-hero-content">
+							<h1>
+								<span>Welcome to</span>
+								ReSKN Clinic
+							</h1>
+							<div class="hb-description">
+								<p><strong>The gold standard in hair removal - Diode Laser Technology</strong></p>
+								<p>For skin that feels as good as it looks. Our clinic offers professional, comfortable laser hair removal using advanced diode laser technology.</p>
 							</div>
+							<a href="https://www.treatwell.co.uk/place/reskn-clinic/" target="_blank" class="hb-btn">Book Your Free Trial</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="item">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12">
-							<div class="hb-slidercontent-area">
-								<figure class="hb-sliderimg">
-									<img src="https://via.placeholder.com/640x650" alt="Comfortable treatment">
-									<figcaption class="hb-slidercontent">
-										<h1><span>Quick & Comfortable</span>Lasting Results</h1>
-										<div class="hb-description">
-											<p>FREE trial session - no cost, no risk. Flexible appointments perfect for busy schedules.</p>
-										</div>
-										<a href="tel:07887630676" class="hb-btn">Call 07887 630676</a>
-									</figcaption> 
-								</figure>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		</section>
 
 		<main id="hb-main" class="hb-main hb-haslayout">
 			<section id="hb-paradisecenter" class="hb-paradisecenter hb-sectionspace hb-haslayout">
@@ -164,13 +191,10 @@
 						<div class="col-xs-12 col-sm-12 col-sm-offset-0 col-md-8 col-md-offset-2">
 							<div class="hb-sectionhead mb-50">
 								<div class="hb-sectiontitle">
-									<h2><span>Welcome to</span>ReSKN Clinic</h2>
+									<h2><span>Why Choose</span>ReSKN's Diode Laser?</h2>
 								</div>
 								<div class="hb-headcontent">
-									<h2>The gold standard in hair removal - Diode Laser Technology</h2>
-									<div class="hb-description">
-										<p>For skin that feels as good as it looks. Our clinic offers professional, comfortable laser hair removal using advanced diode laser technology.</p>
-									</div>
+									<h2>Clinically proven for permanent hair reduction</h2>
 								</div>
 							</div>
 						</div>
@@ -246,7 +270,7 @@
 							<div class="col-xs-12 col-sm-6 col-md-4">
 								<div class="hb-servicebox">
 									<figure class="hb-serviceimg">
-										<img src="https://via.placeholder.com/220x220" alt="Face treatments">
+										<img src="images/service-face.jpg" alt="Face treatments">
 									</figure>
 									<div class="hb-servicecontent">
 										<h3 class="hb-headingtree">Face Treatments</h3>
@@ -260,7 +284,7 @@
 							<div class="col-xs-12 col-sm-6 col-md-4">
 								<div class="hb-servicebox">
 									<figure class="hb-serviceimg">
-										<img src="https://via.placeholder.com/220x220" alt="Upper body treatments">
+										<img src="images/service-upper-body.jpg" alt="Upper body treatments">
 									</figure>
 									<div class="hb-servicecontent">
 										<h3 class="hb-headingtree">Upper Body</h3>
@@ -274,7 +298,7 @@
 							<div class="col-xs-12 col-sm-6 col-md-4">
 								<div class="hb-servicebox">
 									<figure class="hb-serviceimg">
-										<img src="https://via.placeholder.com/220x220" alt="Lower body treatments">
+										<img src="images/service-lower-body.jpg" alt="Lower body treatments">
 									</figure>
 									<div class="hb-servicecontent">
 										<h3 class="hb-headingtree">Lower Body</h3>
@@ -304,7 +328,7 @@
 							<div class="col-xs-12 col-sm-6 col-md-3">
 								<div class="hb-pricingbox">
 									<figure class="hb-pricing-img">
-										<img src="https://via.placeholder.com/250x245" alt="Face treatments">
+										<img src="images/pricing-face.jpg" alt="Face treatments">
 									</figure>
 									<div class="pricingcontent">
 										<h3>Face Treatments</h3>
@@ -324,7 +348,7 @@
 							<div class="col-xs-12 col-sm-6 col-md-3">
 								<div class="hb-pricingbox">
 									<figure class="hb-pricing-img">
-										<img src="https://via.placeholder.com/250x245" alt="Upper body">
+										<img src="images/pricing-upper.jpg" alt="Upper body">
 									</figure>
 									<div class="pricingcontent">
 										<h3>Upper Body</h3>
@@ -343,7 +367,7 @@
 							<div class="col-xs-12 col-sm-6 col-md-3">
 								<div class="hb-pricingbox active">
 									<figure class="hb-pricing-img">
-										<img src="https://via.placeholder.com/250x245" alt="Lower body">
+										<img src="images/pricing-lower.jpg" alt="Lower body">
 									</figure>
 									<div class="pricingcontent">
 										<h3>Lower Body</h3>
@@ -362,7 +386,7 @@
 							<div class="col-xs-12 col-sm-6 col-md-3">
 								<div class="hb-pricingbox">
 									<figure class="hb-pricing-img">
-										<img src="https://via.placeholder.com/250x245" alt="Free trial">
+										<img src="images/pricing-trial.jpg" alt="Free trial">
 									</figure>
 									<div class="pricingcontent">
 										<h3>Special Offer</h3>
@@ -388,7 +412,7 @@
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-5">
 							<figure class="hb-appointmentimg">
-								<img src="https://via.placeholder.com/470x545" alt="ReSKN Clinic treatment room">
+								<img src="images/treatment-room.jpg" alt="ReSKN Clinic treatment room">
 							</figure>
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-7">
