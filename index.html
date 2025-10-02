@@ -1,83 +1,186 @@
 <!doctype html>
-<!-- ReSKN Clinic — customised with Treatwell widget -->
-<html class="no-js" lang="en">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="ReSKN Clinic – medical‑led diode laser hair removal in Windsor. Free patch test, flexible evenings & weekends." />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ReSKN Clinic | Laser Hair Removal in Windsor</title>
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/icomoon.css">
-  <link rel="stylesheet" href="css/icofont.css">
-  <link rel="stylesheet" href="css/plugins.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="css/color.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  <meta name="description" content="Medical-led diode laser hair removal in Windsor. Patch test included. Flexible evening & weekend appointments." />
+  <meta name="author" content="ReSKN Clinic" />
+  <meta property="og:title" content="ReSKN Clinic | Laser Hair Removal in Windsor" />
+  <meta property="og:description" content="Safe, effective, and comfortable laser hair removal. Book your free patch test today." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.resknclinic.co.uk/" />
+  <meta property="og:image" content="assets/og-image.jpg" />
+  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <style>
-    .hb-cartarea { display:none !important; }
-    .hb-topbar .hb-info i { margin-right:6px; }
-    .hb-btn { text-transform: none; }
-    .brand-pill {background:#c7a88a;color:#fff;padding:.35rem .7rem;border-radius:999px;font-size:.8rem;letter-spacing:.3px;}
-    @media (prefers-reduced-motion: reduce){ .owl-carousel, .hb-slidercontent *{animation:none !important; transition:none !important;} }
+    :root{
+      --ink:#1b1b1b;        
+      --muted:#6b6b6b;      
+      --paper:#ffffff;      
+      --bg:#faf8f7;         
+      --brand:#C7A88A;      
+      --brand-dark:#9d846c;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5}
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+    .container{width:min(1100px,92%);margin-inline:auto}
+    .btn{display:inline-block;padding:13px 20px;border-radius:999px;background:var(--ink);color:#fff;font-weight:600;letter-spacing:.2px;transition:transform .2s ease, box-shadow .2s ease}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 10px 20px rgba(0,0,0,.12)}
+    .btn-outline{background:transparent;border:1px solid var(--ink);color:var(--ink)}
+    header{position:sticky;top:0;background:rgba(250,248,247,.8);backdrop-filter:saturate(180%) blur(10px);z-index:50;border-bottom:1px solid rgba(0,0,0,.05)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:700}
+    .logo-badge{width:34px;height:34px;border-radius:50%;background:var(--ink);display:grid;place-items:center;color:#fff;font-weight:700}
+    .hero{padding:80px 0 40px}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+    .headline{font-family:"Playfair Display",serif;font-size:clamp(34px,5vw,56px);line-height:1.06;margin:0 0 12px}
+    .sub{color:var(--muted);font-size:18px;margin:0 0 22px}
+    .badge{display:inline-block;background:var(--brand);color:#fff;padding:6px 12px;border-radius:999px;font-size:13px;letter-spacing:.4px;margin-bottom:14px}
+    .hero-card{background:var(--paper);border-radius:20px;padding:20px;box-shadow:0 10px 30px rgba(0,0,0,.06)}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--paper);border-radius:18px;padding:22px;box-shadow:0 10px 24px rgba(0,0,0,.05)}
+    .card h3{margin:0 0 6px;font-size:20px}
+    .muted{color:var(--muted)}
+    .section{padding:60px 0}
+    .section h2{font-family:"Playfair Display",serif;font-size:clamp(26px,4vw,36px);margin:0 0 14px}
+    .list{display:grid;gap:8px}
+    .list li{list-style:none;display:flex;gap:10px}
+    .list .dot{width:9px;height:9px;border-radius:50%;background:var(--brand);margin-top:8px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .price{font-size:28px;font-weight:700}
+    footer{padding:30px 0 60px;color:var(--muted)}
+    .foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:18px;border-top:1px solid rgba(0,0,0,.06);padding-top:22px}
+    @media (max-width:900px){.hero-grid{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr}} 
+    @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
   </style>
 </head>
-<body class="hb-home hb-homeone">
-<div id="hb-wrapper" class="hb-wrapper hb-haslayout">
-  <!-- Header -->
-  <!-- (header code unchanged) -->
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo" aria-label="ReSKN Clinic">
+        <div class="logo-badge">R</div>
+        <div>ReSKN Clinic</div>
+      </div>
+      <nav class="cta">
+        <a class="btn btn-outline" href="#pricing">Prices</a>
+        <a class="btn" href="#book">Book patch test</a>
+      </nav>
+    </div>
+  </header>
 
-  <!-- Hero slider etc. -->
-  <!-- (content above unchanged) -->
-
-  <!-- Appointment / Book CTA -->
-  <section id="hb-appointment" class="hb-appointment hb-sectionspace hb-haslayout">
-    <div class="container"><div class="row">
-      <div class="col-xs-12 col-md-5"><figure class="hb-appointmentimg"><img src="images/cta.jpg" alt="Book a patch test"></figure></div>
-      <div class="col-xs-12 col-md-7" id="contact">
-        <div class="hb-sectionhead"><div class="hb-sectiontitle"><h2><span>Ready to begin?</span> Book your patch test</h2></div></div>
-        <div class="hb-appointmentcontent">
-          <h3>Choose online booking or email us</h3>
-          <div class="hb-description"><p><strong>Email:</strong> <a href="mailto:hello@resknclinic.co.uk">hello@resknclinic.co.uk</a></p></div>
-          <div class="hb-btnarea" id="book">
-            <a href="mailto:hello@resknclinic.co.uk" class="hb-btn changebtn">Email us</a>
+  <main>
+    <section class="hero container">
+      <div class="hero-grid">
+        <div data-aos="fade-up">
+          <div class="badge">Windsor • Medical-led</div>
+          <h1 class="headline">Diode Laser Hair Removal<br/>that’s gentle and effective</h1>
+          <p class="sub">Targeted, long-term hair reduction using a premium diode laser. Patch test included. Evenings & weekends available.</p>
+          <div class="cta">
+            <a class="btn" id="book" href="#contact">Book free patch test</a>
+            <a class="btn btn-outline" href="#about">Why choose us</a>
           </div>
-
-          <!-- Treatwell Booking Widget -->
-          <div id="wahanda-online-booking-widget-iframe"
-               data-widget-url="https://widget.treatwell.co.uk/place/489475/menu/">
-          </div>
-          <script src="https://widget.treatwell.co.uk/common/venue-menu/javascript/widget-button.js?v1"></script>
-          <script>
-            (function() {
-              var link = document.createElement("link");
-              link.type = "text/css";
-              link.href = "https://widget.treatwell.co.uk/common/venue-menu/css/widget-button.css";
-              link.rel = "stylesheet";
-              link.media = "screen";
-              document.getElementsByTagName("head")[0].appendChild(link);
-            })();
-          </script>
-
+        </div>
+        <div class="hero-card" data-aos="zoom-in">
+          <img src="assets/hero.jpg" alt="Laser hair removal treatment"/>
         </div>
       </div>
-    </div></div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <!-- (footer code unchanged) -->
+    <section class="container section" id="about">
+      <h2 data-aos="fade-up">Why ReSKN Clinic</h2>
+      <div class="grid-3">
+        <div class="card" data-aos="fade-up" data-aos-delay="50">
+          <h3>Medical-led care</h3>
+          <p class="muted">Run by a GPhC-registered pharmacist. Safety-first protocols and informed consent every step.</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="120">
+          <h3>Comfort-optimised</h3>
+          <p class="muted">Advanced cooling and settings personalised to your skin & hair profile for a more comfortable experience.</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="190">
+          <h3>Convenient bookings</h3>
+          <p class="muted">Flexible evenings & weekends in Windsor. Free patch test & consultation included.</p>
+        </div>
+      </div>
+    </section>
 
-</div>
+    <section class="container section" id="pricing">
+      <h2 data-aos="fade-up">Popular treatment areas</h2>
+      <div class="grid-3" data-aos="fade-up">
+        <div class="card">
+          <h3>Face</h3>
+          <p class="muted">Upper lip, chin, jawline, beard shaping</p>
+          <div class="price">from £25</div>
+        </div>
+        <div class="card">
+          <h3>Body</h3>
+          <p class="muted">Underarms, bikini, half/full legs</p>
+          <div class="price">from £35</div>
+        </div>
+        <div class="card">
+          <h3>Packages</h3>
+          <p class="muted">Mix & match and save on multi-area bundles</p>
+          <div class="price">ask for offers</div>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:10px" data-aos="fade-up">Full price list available during consultation. Introductory offers for first-time clients.</p>
+    </section>
 
-<!-- Scripts -->
-<script src="js/vendor/jquery-library.js"></script>
-<script src="js/vendor/bootstrap.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/isotope.pkgd.js"></script>
-<script src="js/isotop.js"></script>
-<script src="js/countTo.js"></script>
-<script src="js/appear.js"></script>
-<script src="js/main.js"></script>
+    <section class="container section">
+      <h2 data-aos="fade-up">What to expect</h2>
+      <ul class="list" data-aos="fade-up">
+        <li><span class="dot"></span><span>Free patch test to confirm settings and suitability</span></li>
+        <li><span class="dot"></span><span>Typically 6–8 sessions for optimal results</span></li>
+        <li><span class="dot"></span><span>SPF and aftercare guidance provided</span></li>
+      </ul>
+    </section>
+
+    <section class="container section" id="contact">
+      <h2 data-aos="fade-up">Book your free patch test</h2>
+      <p class="muted" data-aos="fade-up">Prefer online booking? Use our Treatwell page, or message us and we’ll find a time that suits.</p>
+      
+      <!-- Treatwell Widget -->
+      <div id="wahanda-online-booking-widget-iframe"
+           data-widget-url="https://widget.treatwell.co.uk/place/489475/menu/"></div>
+      <script src="https://widget.treatwell.co.uk/common/venue-menu/javascript/widget-button.js?v1"></script>
+      <script>
+        (function() {
+          var link = document.createElement("link");
+          link.type = "text/css";
+          link.href = "https://widget.treatwell.co.uk/common/venue-menu/css/widget-button.css";
+          link.rel = "stylesheet";
+          link.media = "screen";
+          document.getElementsByTagName("head")[0].appendChild(link);
+        })();
+      </script>
+
+      <div class="cta" data-aos="fade-up" style="margin-top:20px;">
+        <a class="btn btn-outline" href="mailto:hello@resknclinic.co.uk">Email us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <div>
+        <strong>ReSKN Clinic</strong><br/>
+        Windsor, UK • Evening & weekend appointments
+      </div>
+      <div>
+        <a href="#" class="muted">Privacy</a> · <a href="#" class="muted">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ once:true, duration:700, easing:'ease-out' });
+  </script>
 </body>
 </html>
