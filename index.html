@@ -30,7 +30,7 @@
 			background: #ffffff;
 		}
 		.hb-navigationarea {
-			background: linear-gradient(to right, #c87137 0%, #a65980 50%, #6b4a7a 100%) !important;
+			background: linear-gradient(to right, #6b4a7a 0%, #c87137 50%, #6b4a7a 100%) !important;
 		}
 		.hb-topbar {
 			background: #ffffff;
@@ -44,9 +44,6 @@
 		}
 		.hb-info li, .hb-info li a {
 			color: #2d2c40;
-		}
-		.hb-searcharea a {
-			color: #ffffff;
 		}
 		strong.hb-logo img {
 			width: 200px;
@@ -124,6 +121,11 @@
 		.hb-footer a:hover {
 			color: #a65980;
 		}
+		
+		/* Hide search feature */
+		.hb-addnav, .search-popup {
+			display: none !important;
+		}
 	</style>
 </head>
 <body class="hb-home hb-homeone">
@@ -149,11 +151,6 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							<div class="hb-addnav">
-								<div class="hb-searcharea">
-									<a href="#" class="search-opener"><i class="icon_search"></i></a>
-								</div>
-							</div>
 							<nav id="hb-nav" class="hb-nav">
 								<div class="navbar-header">
 									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hb-navigation" aria-expanded="false">
@@ -166,9 +163,7 @@
 								<div id="hb-navigation" class="collapse navbar-collapse hb-navigation">
 									<ul>                                                                    
 										<li class="current-menu-item"><a href="index.html">Home</a></li>
-										<li><a href="#services">Services</a></li>
 										<li><a href="#pricing">Pricing</a></li>
-										<li><a href="#about">About</a></li>
 										<li><a href="#contact">Contact</a></li>
 									</ul>
 								</div>
@@ -178,20 +173,6 @@
 				</div>
 			</div>
 		</header>
-
-		<div class="search-popup">
-			<div class="holder">
-				<div class="block">
-					<a href="#" class="close-btn"><i class="fa fa-times"></i></a>
-					<form action="#" class="search-form">
-						<fieldset>
-							<input type="search" class="form-control" placeholder="Search">
-							<button type="submit" class="btn-primary"><i class="fa fa-search"></i></button>
-						</fieldset>
-					</form>
-				</div>
-			</div>
-		</div>
 
 		<section class="hb-hero-section">
 			<div class="hb-hero-image">
@@ -446,8 +427,7 @@
 								</strong>
 								<span class="hb-timeandday">Open: Fri 11am-8pm, Sat-Sun 10am-8pm</span>
 								<ul class="list-unstyled hb-socialicons">
-									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+									<li><a href="https://www.instagram.com/resknclinic/" target="_blank"><i class="fab fa-instagram"></i></a></li>
 								</ul>
 							</div>
 						</div>
@@ -482,7 +462,6 @@
 							<div class="hb-col">
 								<h3>Quick Links</h3>
 								<ul class="list-unstyled">
-									<li><a href="#services">Services</a></li>
 									<li><a href="#pricing">Pricing</a></li>
 									<li><a href="https://widget.treatwell.co.uk/place/489475/menu/" target="_blank">Book Online</a></li>
 									<li><a href="tel:07887630676">Call Us</a></li>
