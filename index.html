@@ -26,16 +26,77 @@
     /* hide shop bits we don't use */
     .hb-cartarea { display:none !important; }
 
-    /* brand pill style (if used) */
-    .brand-pill{background:#C7A88A;color:#fff;border-radius:999px;padding:.4rem .9rem;letter-spacing:.3px}
+    /* ====== HEADER TOP BAR ALIGNMENT ====== */
+    .hb-topbar .col-xs-12{
+      display:flex;
+      align-items:center;          /* vertical centering */
+      gap:18px;
+    }
+    .hb-logo img{ max-height:58px; height:auto; width:auto; }
 
-    /* make appointment section roomier */
+    /* Center the info block between logo and button */
+    .hb-info-area{
+      margin-left:auto;
+      margin-right:auto;
+    }
+    .hb-info-area ul{
+      display:flex;
+      gap:34px;
+      align-items:center;
+      margin:0;
+    }
+    .hb-info-area li{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      white-space:nowrap;
+    }
+    .hb-info-area li span{
+      display:block;
+      line-height:1.2;
+      text-align:center;           /* keep copy visually centered */
+    }
+
+    /* Make icons a touch larger for balance */
+    .hb-info-area i{ font-size:18px; }
+
+    /* ====== MATCH "BOOK PATCH TEST" PILL STYLE ====== */
+    /* If your theme already styles .hb-btn, this pill overrides to match nav pill */
+    .brand-pill{
+      background:#C7A88A;
+      color:#fff !important;
+      border-radius:999px;
+      padding:.55rem 1.05rem;
+      letter-spacing:.3px;
+      text-transform:uppercase;
+      font-weight:600;
+      line-height:1;
+      display:inline-block;
+      border:none;
+    }
+    .brand-pill:hover,
+    .brand-pill:focus{
+      opacity:.9;
+      color:#fff !important;
+    }
+
+    /* Space in the appointment block */
     #hb-appointment{padding-top:80px;padding-bottom:80px}
 
     /* optional: floating mobile book button */
     .floating-book{position:fixed;right:16px;bottom:16px;z-index:9999}
     .floating-book .hb-btn{border-radius:999px;padding:12px 18px}
     @media (min-width:992px){.floating-book{display:none}}
+
+    /* Responsive niceties for small screens */
+    @media (max-width:767px){
+      .hb-topbar .col-xs-12{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:10px 16px;
+      }
+      .hb-info-area ul{ gap:16px; }
+    }
   </style>
 </head>
 
@@ -63,20 +124,20 @@
                 <a href="index.html"><img src="images/logo 3.png" alt="ReSKN Clinic"></a>
               </strong>
 
-              <!-- Treatwell popup trigger in header -->
-              <a href="https://www.treatwell.co.uk/place/reskn-clinic"
-                 class="hb-btn hidden-xs"
-                 id="wahanda-online-booking-widget"
-                 onclick="return openTreatwell();">
-                Book now
-              </a>
-
               <div class="hb-info-area hidden-xs">
                 <ul class="list-unstyled hb-info">
                   <li><i class="ti-location-pin hidden-sm"></i><span>ReSKN Clinic<em>16 Dower Park, Windsor, SL4 4BQ</em></span></li>
                   <li><i class="ti-email hidden-sm"></i><span>07887 630676 <a href="mailto:Nori@resknclinic.co.uk">Nori@resknclinic.co.uk</a></span></li>
                 </ul>
               </div>
+
+              <!-- Treatwell popup trigger in header — now same pill style as Book Patch Test -->
+              <a href="https://www.treatwell.co.uk/place/reskn-clinic"
+                 class="brand-pill hidden-xs"
+                 id="wahanda-online-booking-widget"
+                 onclick="return openTreatwell();">
+                BOOK NOW
+              </a>
             </div>
           </div>
         </div>
