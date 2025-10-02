@@ -1,704 +1,493 @@
 <!doctype html>
-<!--[if lt IE 7]>   <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>      <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>      <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<html class="no-js" lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ReSKN Clinic | Laser Hair Removal in Windsor</title>
-  <meta name="description" content="Medical-led diode laser hair removal in Windsor. Free patch test • Comfortable treatments • Evenings & weekends." />
-
-  <!-- Template CSS (unchanged) -->
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/icomoon.css">
-  <link rel="stylesheet" href="css/icofont.css">
-  <link rel="stylesheet" href="css/plugins.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="css/color.css">
-  <link rel="stylesheet" href="css/responsive.css">
-
-  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-
-  <!-- Small theme tweaks (safe overrides) -->
-  <style>
-    /* hide shop bits we don't use */
-    .hb-cartarea { display:none !important; }
-
-    /* ====== HEADER TOP BAR ALIGNMENT ====== */
-    .hb-topbar .col-xs-12{
-      display:flex;
-      align-items:center;          /* vertical centering */
-      gap:18px;
-    }
-    .hb-logo img{ max-height:58px; height:auto; width:auto; }
-
-    /* Center the info block between logo and button */
-    .hb-info-area{
-      margin-left:auto;
-      margin-right:auto;
-    }
-    .hb-info-area ul{
-      display:flex;
-      gap:34px;
-      align-items:center;
-      margin:0;
-    }
-    .hb-info-area li{
-      display:flex;
-      align-items:center;
-      gap:10px;
-      white-space:nowrap;
-    }
-    .hb-info-area li span{
-      display:block;
-      line-height:1.2;
-      text-align:center;           /* keep copy visually centered */
-    }
-
-    /* Make icons a touch larger for balance */
-    .hb-info-area i{ font-size:18px; }
-
-    /* ====== MATCH "BOOK PATCH TEST" PILL STYLE ====== */
-    /* If your theme already styles .hb-btn, this pill overrides to match nav pill */
-    .brand-pill{
-      background:#C7A88A;
-      color:#fff !important;
-      border-radius:999px;
-      padding:.55rem 1.05rem;
-      letter-spacing:.3px;
-      text-transform:uppercase;
-      font-weight:600;
-      line-height:1;
-      display:inline-block;
-      border:none;
-    }
-    .brand-pill:hover,
-    .brand-pill:focus{
-      opacity:.9;
-      color:#fff !important;
-    }
-
-    /* Space in the appointment block */
-    #hb-appointment{padding-top:80px;padding-bottom:80px}
-
-    /* optional: floating mobile book button */
-    .floating-book{position:fixed;right:16px;bottom:16px;z-index:9999}
-    .floating-book .hb-btn{border-radius:999px;padding:12px 18px}
-    @media (min-width:992px){.floating-book{display:none}}
-
-    /* Responsive niceties for small screens */
-    @media (max-width:767px){
-      .hb-topbar .col-xs-12{
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:10px 16px;
-      }
-      .hb-info-area ul{ gap:16px; }
-    }
-  </style>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="ReSKN Clinic - Professional Diode Laser Hair Removal in Windsor. Free consultation and trial session available.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ReSKN Clinic | Laser Hair Removal Windsor</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/icofont.css">
+	<link rel="stylesheet" href="css/plugins.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/color.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+	<style>
+		/* Custom color scheme matching ReSKN logo */
+		.hb-btn, .hb-socialicons li a {
+			background: linear-gradient(to right, #f4a460 0%, #d291bc 50%, #9b7ab8 100%);
+			background-size: 200% auto;
+		}
+		.hb-btn:hover, .hb-socialicons li a:hover {
+			background-position: right center;
+		}
+		.hb-paradiseiconbox {
+			background: linear-gradient(to right, #f4a460 0%, #d291bc 50%, #9b7ab8 100%);
+		}
+		.hb-header.v2 {
+			background: linear-gradient(135deg, #6b4d8a 0%, #8b6ba8 100%);
+		}
+		.hb-navigationarea {
+			background: rgba(107, 77, 138, 0.95);
+		}
+		strong.hb-logo img {
+			max-height: 60px;
+		}
+		.hb-pricingbox.active, .hb-pricingbox:hover {
+			background: linear-gradient(to bottom, #9b7ab8 0%, #d291bc 100%);
+		}
+	</style>
 </head>
-
 <body class="hb-home hb-homeone">
-  <!--[if lt IE 8]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please
-      <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+	<div id="hb-wrapper" class="hb-wrapper hb-haslayout">
+		<header id="hb-header" class="hb-header v2 hb-haslayout">   
+			<div class="hb-topbar">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12">
+							<strong class="hb-logo"><a href="index.html"><img src="images/reskn-logo.png" alt="ReSKN Clinic logo"></a></strong>
+							<a href="https://www.treatwell.co.uk/place/reskn-clinic/" target="_blank" class="hb-btn hidden-xs">Book Now</a>
+							<div class="hb-info-area hidden-xs">
+								<ul class="list-unstyled hb-info">
+									<li><i class="ti-location-pin hidden-sm"></i><span>16 Dower Park<em>Windsor, SL4 4BQ</em></span></li>
+									<li><i class="ti-email hidden-sm"></i><span>07887 630676<a href="mailto:info@resknclinic.com">info@resknclinic.com</a></span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hb-navigationarea">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="hb-addnav">
+								<div class="hb-searcharea">
+									<a href="#" class="search-opener"><i class="icon_search"></i></a>
+								</div>
+							</div>
+							<nav id="hb-nav" class="hb-nav">
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hb-navigation" aria-expanded="false">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+								<div id="hb-navigation" class="collapse navbar-collapse hb-navigation">
+									<ul>                                                                    
+										<li class="current-menu-item"><a href="index.html">Home</a></li>
+										<li><a href="#services">Services</a></li>
+										<li><a href="#pricing">Pricing</a></li>
+										<li><a href="#about">About</a></li>
+										<li><a href="#contact">Contact</a></li>
+									</ul>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
 
-  <!--************************************
-        Wrapper Start
-  *************************************-->
-  <div id="hb-wrapper" class="hb-wrapper hb-haslayout">
+		<div class="search-popup">
+			<div class="holder">
+				<div class="block">
+					<a href="#" class="close-btn"><i class="fa fa-times"></i></a>
+					<form action="#" class="search-form">
+						<fieldset>
+							<input type="search" class="form-control" placeholder="Search">
+							<button type="submit" class="btn-primary"><i class="fa fa-search"></i></button>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
 
-    <!--************************************
-          Header V2 Start
-    *************************************-->
-    <header id="hb-header" class="hb-header v2 hb-haslayout">
-      <div class="hb-topbar">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12">
-              <strong class="hb-logo">
-                <!-- put your transparent logo at images/logo.png -->
-                <a href="index.html"><img src="images/logo 3.png" alt="ReSKN Clinic"></a>
-              </strong>
+		<div id="hb-homeslider2" class="hb-homeslider v2 owl-carousel owl-theme hb-haslayout">
+			<div class="item">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="hb-slidercontent-area">
+								<figure class="hb-sliderimg">
+									<img src="https://via.placeholder.com/640x650" alt="Laser hair removal treatment">
+									<figcaption class="hb-slidercontent">
+										<h1><span>Professional</span>Laser Hair Removal</h1>
+										<div class="hb-description">
+											<p>Clinically proven diode laser technology for permanent hair reduction.</p>
+										</div>
+										<a href="https://www.treatwell.co.uk/place/reskn-clinic/" target="_blank" class="hb-btn">Book Free Trial</a>
+									</figcaption>
+								</figure>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="hb-slidercontent-area">
+								<figure class="hb-sliderimg">
+									<img src="https://via.placeholder.com/640x650" alt="Comfortable treatment">
+									<figcaption class="hb-slidercontent">
+										<h1><span>Quick & Comfortable</span>Lasting Results</h1>
+										<div class="hb-description">
+											<p>FREE trial session - no cost, no risk. Flexible appointments perfect for busy schedules.</p>
+										</div>
+										<a href="tel:07887630676" class="hb-btn">Call 07887 630676</a>
+									</figcaption> 
+								</figure>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-              <div class="hb-info-area hidden-xs">
-                <ul class="list-unstyled hb-info">
-                  <li><i class="ti-location-pin hidden-sm"></i><span>ReSKN Clinic<em>16 Dower Park, Windsor, SL4 4BQ</em></span></li>
-                  <li><i class="ti-email hidden-sm"></i><span>07887 630676 <a href="mailto:Nori@resknclinic.co.uk">Nori@resknclinic.co.uk</a></span></li>
-                </ul>
-              </div>
+		<main id="hb-main" class="hb-main hb-haslayout">
+			<section id="hb-paradisecenter" class="hb-paradisecenter hb-sectionspace hb-haslayout">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-sm-offset-0 col-md-8 col-md-offset-2">
+							<div class="hb-sectionhead mb-50">
+								<div class="hb-sectiontitle">
+									<h2><span>Welcome to</span>ReSKN Clinic</h2>
+								</div>
+								<div class="hb-headcontent">
+									<h2>The gold standard in hair removal - Diode Laser Technology</h2>
+									<div class="hb-description">
+										<p>For skin that feels as good as it looks. Our clinic offers professional, comfortable laser hair removal using advanced diode laser technology.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hb-paradisecenter-area hb-haslayout">
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<div class="hb-paradisecenterbox">
+									<span class="hb-paradiseiconbox">
+										<i class="ti-gift"></i>
+									</span>
+									<div class="hb-paradisecontent">
+										<h3 class="hb-headingtree">Free Trial Session</h3>
+										<div class="hb-description">
+											<p>No cost, no risk. Experience our treatment with a complimentary trial on a small area of your choice.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<div class="hb-paradisecenterbox">
+									<span class="hb-paradiseiconbox">
+										<i class="ti-credit-card"></i>
+									</span>
+									<div class="hb-paradisecontent">
+										<h3 class="hb-headingtree">Pay-As-You-Go</h3>
+										<div class="hb-description">
+											<p>No big upfront fees. Flexible pricing that works with your budget and schedule.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<div class="hb-paradisecenterbox">
+									<span class="hb-paradiseiconbox">
+										<i class="ti-bolt"></i>
+									</span>
+									<div class="hb-paradisecontent">
+										<h3 class="hb-headingtree">Quick & Comfortable</h3>
+										<div class="hb-description">
+											<p>Fast treatment sessions with lasting results and minimal downtime.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<div class="hb-paradisecenterbox">
+									<span class="hb-paradiseiconbox">
+										<i class="ti-calendar"></i>
+									</span>
+									<div class="hb-paradisecontent">
+										<h3 class="hb-headingtree">Flexible Appointments</h3>
+										<div class="hb-description">
+											<p>Open Fri 11am-8pm, Sat-Sun 10am-8pm. Perfect for busy timetables.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-              <!-- Treatwell popup trigger in header — now same pill style as Book Patch Test -->
-              <a href="https://www.treatwell.co.uk/place/reskn-clinic"
-                 class="brand-pill hidden-xs"
-                 id="wahanda-online-booking-widget"
-                 onclick="return openTreatwell();">
-                BOOK NOW
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+			<section id="services" class="hb-services v2 hb-sectionspace hb-bg hb-haslayout">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-sm-offset-0 col-md-8 col-md-offset-2">
+							<div class="hb-sectionhead mb-50">
+								<div class="hb-sectiontitle">
+									<h2 class="text-capitalize"><span>Treatment Zones</span>Face & Body</h2>
+								</div>
+							</div>
+						</div>
+						<div class="hb-servicesarea hb-haslayout">
+							<div class="col-xs-12 col-sm-6 col-md-4">
+								<div class="hb-servicebox">
+									<figure class="hb-serviceimg">
+										<img src="https://via.placeholder.com/220x220" alt="Face treatments">
+									</figure>
+									<div class="hb-servicecontent">
+										<h3 class="hb-headingtree">Face Treatments</h3>
+										<div class="hb-description">
+											<p>Upper Lip, Chin, Full Face, Cheeks, Jawline - from £25</p>
+										</div>
+										<a href="https://www.treatwell.co.uk/place/reskn-clinic/" target="_blank" class="hb-btn">Book Now</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-4">
+								<div class="hb-servicebox">
+									<figure class="hb-serviceimg">
+										<img src="https://via.placeholder.com/220x220" alt="Upper body treatments">
+									</figure>
+									<div class="hb-servicecontent">
+										<h3 class="hb-headingtree">Upper Body</h3>
+										<div class="hb-description">
+											<p>Underarms, Chest, Full Arms, Half Arms - from £10</p>
+										</div>
+										<a href="https://www.treatwell.co.uk/place/reskn-clinic/" target="_blank" class="hb-btn">Book Now</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-4">
+								<div class="hb-servicebox">
+									<figure class="hb-serviceimg">
+										<img src="https://via.placeholder.com/220x220" alt="Lower body treatments">
+									</figure>
+									<div class="hb-servicecontent">
+										<h3 class="hb-headingtree">Lower Body</h3>
+										<div class="hb-description">
+											<p>Legs, Full Legs, Bikini Line, Hollywood - from £45</p>
+										</div>
+										<a href="https://www.treatwell.co.uk/place/reskn-clinic/" target="_blank" class="hb-btn">Book Now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-      <div class="hb-navigationarea">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-lg-12">
-              <div class="hb-addnav">
-                <div class="hb-searcharea">
-                  <a href="#" class="search-opener"><i class="icon_search"></i></a>
-                </div>
-                <div class="hb-cartarea"><!-- hidden via CSS --></div>
-              </div>
+			<section id="pricing" class="hb-pricingplan hb-sectionspace hb-haslayout">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-sm-offset-0 col-md-8 col-md-offset-2">
+							<div class="hb-sectionhead mb-50">
+								<div class="hb-sectiontitle">
+									<h2><span>Treatment Zones</span>Our Pricing</h2>
+								</div>
+							</div>
+						</div>
+						<div class="hb-pricingplan-area">
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<div class="hb-pricingbox">
+									<figure class="hb-pricing-img">
+										<img src="https://via.placeholder.com/250x245" alt="Face treatments">
+									</figure>
+									<div class="pricingcontent">
+										<h3>Face Treatments</h3>
+										<ul class="list-unstyled hb-pricinglist">
+											<li>Upper Lip - £25</li>
+											<li>Chin - £25</li>
+											<li>Full Face - £60</li>
+											<li>Cheeks - £30</li>
+											<li>Jawline - £35</li>
+										</ul>
+										<div class="hb-btnarea">
+											<a href="https://www.treatwell.co.uk/place/reskn-clinic/" target="_blank" class="hb-btn changebtn">Book Now</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<div class="hb-pricingbox">
+									<figure class="hb-pricing-img">
+										<img src="https://via.placeholder.com/250x245" alt="Upper body">
+									</figure>
+									<div class="pricingcontent">
+										<h3>Upper Body</h3>
+										<ul class="list-unstyled hb-pricinglist">
+											<li>Underarms - £10</li>
+											<li>Chest - £90</li>
+											<li>Full Arms - £90</li>
+											<li>Half Arms - £60</li>
+										</ul>
+										<div class="hb-btnarea">
+											<a href="https://www.treatwell.co.uk/place/reskn-clinic/" target="_blank" class="hb-btn changebtn">Book Now</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<div class="hb-pricingbox active">
+									<figure class="hb-pricing-img">
+										<img src="https://via.placeholder.com/250x245" alt="Lower body">
+									</figure>
+									<div class="pricingcontent">
+										<h3>Lower Body</h3>
+										<ul class="list-unstyled hb-pricinglist">
+											<li>Legs - £80</li>
+											<li>Full Legs - £140</li>
+											<li>Bikini Line - £45</li>
+											<li>Hollywood - £65</li>
+										</ul>
+										<div class="hb-btnarea">
+											<a href="https://www.treatwell.co.uk/place/reskn-clinic/" target="_blank" class="hb-btn changebtn">Book Now</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-3">
+								<div class="hb-pricingbox">
+									<figure class="hb-pricing-img">
+										<img src="https://via.placeholder.com/250x245" alt="Free trial">
+									</figure>
+									<div class="pricingcontent">
+										<h3>Special Offer</h3>
+										<ul class="list-unstyled hb-pricinglist">
+											<li>Free Trial Session</li>
+											<li>Small area of choice</li>
+											<li>Upper lip, chin or underarms</li>
+											<li>First-time clients only</li>
+										</ul>
+										<div class="hb-btnarea">
+											<a href="https://www.treatwell.co.uk/place/reskn-clinic/" target="_blank" class="hb-btn changebtn">Claim Offer</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-              <nav id="hb-nav" class="hb-nav">
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hb-navigation" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                </div>
-                <div id="hb-navigation" class="collapse navbar-collapse hb-navigation">
-                  <ul>
-                    <li class="menu-item-has-children current-menu-item">
-                      <a href="javascript:void(0);">Home</a>
-                      <ul class="list-unstyled sub-menu">
-                        <li><a href="index.html">ReSKN — Home</a></li>
-                        <li><a href="index-2.html">Homepage Spa S2</a></li>
-                        <li><a href="index-3.html">Homepage Spa S3</a></li>
-                        <li><a href="index-4.html">Homepage Spa S4</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#hb-services">Services</a></li>
-                    <li><a href="#hb-pricingplan">Prices</a></li>
-                    <li><a href="#hb-gallery">Gallery</a></li>
-                    <li><a href="#hb-appointment" class="brand-pill">Book patch test</a></li>
-                  </ul>
-                </div>
-              </nav>
+			<section id="about" class="hb-appointment hb-sectionspace hb-haslayout">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-5">
+							<figure class="hb-appointmentimg">
+								<img src="https://via.placeholder.com/470x545" alt="ReSKN Clinic treatment room">
+							</figure>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-7">
+							<div class="hb-sectionhead">
+								<div class="hb-sectiontitle">
+									<h2><span>How It Works</span>Simple Process</h2>
+								</div>
+							</div>
+							<div class="hb-appointmentcontent">
+								<h3>Ready to Book Your Free Consultation?</h3>
+								<div class="hb-description">
+									<p><strong>Step 1:</strong> Free consultation and patch test - 30 min (normally £20)</p>
+									<p><strong>Step 2:</strong> Choose your treatment zone from face, body or both</p>
+									<p><strong>Step 3:</strong> Quick, comfortable laser session with lasting results and minimal downtime</p>
+									<p>Call us: <strong>07887 630676</strong></p>
+									<p><span>Open: Fri 11am-8pm, Sat-Sun 10am-8pm</span></p>
+								</div>
+								<div class="hb-btnarea">
+									<a href="https://www.treatwell.co.uk/place/reskn-clinic/" target="_blank" class="hb-btn">Book Appointment</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!--************************************
-          Header V2 End
-    *************************************-->
+		<footer id="hb-footer" class="hb-footer hb-haslayout">
+			<div class="hb-footer-area">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<div class="hb-col">
+								<strong class="hb-logo">
+									<a href="index.html"><img src="images/reskn-logo.png" alt="ReSKN Clinic"></a>
+								</strong>
+								<span class="hb-timeandday">Open: Fri 11am-8pm, Sat-Sun 10am-8pm</span>
+								<ul class="list-unstyled hb-socialicons">
+									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<div class="hb-col">
+								<h3>Contact Us</h3>
+								<ul class="list-unstyled hb-info">
+									<li><span>07887 630676<a href="mailto:info@resknclinic.com">info@resknclinic.com</a></span></li>
+									<li><span>16 Dower Park<em>Windsor, SL4 4BQ</em></span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<div class="hb-col">
+								<h3>Newsletter</h3>
+								<div class="hb-emailarea">
+									<form class="hb-formtheme">
+										<fieldset>
+											<div class="form-group">
+												<input type="text" class="form-control" placeholder="E-mail">
+												<button type="submit" class="hb-btn">Subscribe</button>
+											</div>
+										</fieldset>
+									</form>
+								</div>
+								<div class="hb-description">
+									<p>Subscribe for special offers and updates</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<div class="hb-col">
+								<h3>Quick Links</h3>
+								<ul class="list-unstyled">
+									<li><a href="#services">Services</a></li>
+									<li><a href="#pricing">Pricing</a></li>
+									<li><a href="https://www.treatwell.co.uk/place/reskn-clinic/" target="_blank">Book Online</a></li>
+									<li><a href="tel:07887630676">Call Us</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hb-footerbar">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12">
+							<span class="hb-copyright">Copyright © 2024 ReSKN Clinic Windsor.</span>
+							<ul class="list-unstyled hb-footernav">
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Terms & Conditions</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 
-    <div class="search-popup">
-      <div class="holder">
-        <div class="block">
-          <a href="#" class="close-btn"><i class="fa fa-times"></i></a>
-          <form action="#" class="search-form">
-            <fieldset>
-              <input type="search" class="form-control" placeholder="Search">
-              <button type="submit" class="btn-primary"><i class="fa fa-search"></i></button>
-            </fieldset>
-          </form>
-        </div>
-      </div>
-    </div>
+		<span id="back-top" class="text-center rounded-circle fa fa-angle-up"></span>
+	</div>
 
-    <!--************************************
-          Home Slider v2 Start
-    *************************************-->
-    <div id="hb-homeslider2" class="hb-homeslider v2 owl-carousel owl-theme hb-haslayout">
-      <div class="item">
-        <div class="container"><div class="row"><div class="col-xs-12">
-          <div class="hb-slidercontent-area">
-            <figure class="hb-sliderimg">
-              <img src="images/opening image.png" alt="ReSKN Clinic treatment room">
-              <figcaption class="hb-slidercontent">
-                <h1><span>Medical-led</span>Laser Hair Removal, Windsor</h1>
-                <div class="hb-description">
-                  <p>Free consultation & patch test • Comfortable diode laser • Evenings & weekends</p>
-                </div>
-                <a href="https://www.treatwell.co.uk/place/reskn-clinic" class="hb-btn"
-                   onclick="return openTreatwell();">Book now</a>
-              </figcaption>
-            </figure>
-          </div>
-        </div></div></div>
-      </div>
-
-      <div class="item">
-        <div class="container"><div class="row"><div class="col-xs-12">
-          <div class="hb-slidercontent-area">
-            <figure class="hb-sliderimg">
-              <img src="images/waiting.jpg" alt="ReSKN Clinic waiting area">
-              <figcaption class="hb-slidercontent">
-                <h1><span>Gentle &amp; Effective</span>For skin that feels as good as it looks</h1>
-                <div class="hb-description">
-                  <p>Personalised settings for face & body • Suitable for multiple skin types</p>
-                </div>
-                <a href="#hb-pricingplan" class="hb-btn">View prices</a>
-              </figcaption>
-            </figure>
-          </div>
-        </div></div></div>
-      </div>
-    </div>
-    <!--************************************
-          Home Slider V2 End
-    *************************************-->
-
-    <!--************************************
-            Main Start
-    *************************************-->
-    <main id="hb-main" class="hb-main hb-haslayout">
-
-      <!-- Paradise Center -> Why ReSKN -->
-      <section id="hb-paradisecenter" class="hb-paradisecenter hb-sectionspace hb-haslayout">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-md-8 col-md-offset-2">
-              <div class="hb-sectionhead mb-50">
-                <div class="hb-sectiontitle">
-                  <h2><span>Why choose</span> ReSKN Clinic</h2>
-                </div>
-                <div class="hb-headcontent">
-                  <h2>Clinically-proven diode laser with comfortable cooling</h2>
-                  <div class="hb-description">
-                    <p>Run by a registered healthcare professional. Free patch test and clear aftercare so you feel confident from the first visit.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="hb-paradisecenter-area hb-haslayout">
-              <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="hb-paradisecenterbox">
-                  <span class="hb-paradiseiconbox"><i class="ti-user"></i></span>
-                  <div class="hb-paradisecontent">
-                    <h3 class="hb-headingtree">Medical-led care</h3>
-                    <div class="hb-description"><p>Safety-first protocols and personalised settings.</p></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="hb-paradisecenterbox">
-                  <span class="hb-paradiseiconbox"><i class="ti-face-smile"></i></span>
-                  <div class="hb-paradisecontent">
-                    <h3 class="hb-headingtree">Comfort focused</h3>
-                    <div class="hb-description"><p>Advanced cooling for gentler sessions.</p></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="hb-paradisecenterbox">
-                  <span class="hb-paradiseiconbox"><i class="ti-timer"></i></span>
-                  <div class="hb-paradisecontent">
-                    <h3 class="hb-headingtree">Flexible times</h3>
-                    <div class="hb-description"><p>Evenings & weekends to fit busy schedules.</p></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="hb-paradisecenterbox">
-                  <span class="hb-paradiseiconbox"><i class="ti-check-box"></i></span>
-                  <div class="hb-paradisecontent">
-                    <h3 class="hb-headingtree">Trial session</h3>
-                    <div class="hb-description"><p>Free consultation & patch test included.</p></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- Services -->
-      <section id="hb-services" class="hb-services v2 hb-sectionspace hb-bg hb-haslayout">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-md-8 col-md-offset-2">
-              <div class="hb-sectionhead mb-50">
-                <div class="hb-sectiontitle">
-                  <h2 class="text-capitalize"><span>Treatment</span> areas</h2>
-                </div>
-              </div>
-            </div>
-
-            <div class="hb-servicesarea hb-haslayout">
-              <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="hb-servicebox">
-                  <figure class="hb-serviceimg"><img src="images/room-1.jpg" alt="Face laser"></figure>
-                  <div class="hb-servicecontent">
-                    <h3 class="hb-headingtree">Face</h3>
-                    <div class="hb-description"><p>Upper lip, chin, cheeks, jawline, full face.</p></div>
-                    <a href="#" class="hb-btn" onclick="return openTreatwell();">Book Now</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="hb-servicebox">
-                  <figure class="hb-serviceimg"><img src="images/front.jpg" alt="Underarms"></figure>
-                  <div class="hb-servicecontent">
-                    <h3 class="hb-headingtree">Upper Body</h3>
-                    <div class="hb-description"><p>Underarms, half/full arms, chest.</p></div>
-                    <a href="#" class="hb-btn" onclick="return openTreatwell();">Book Now</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="hb-servicebox">
-                  <figure class="hb-serviceimg"><img src="images/waiting.jpg" alt="Lower body"></figure>
-                  <div class="hb-servicecontent">
-                    <h3 class="hb-headingtree">Lower Body</h3>
-                    <div class="hb-description"><p>Bikini line, Hollywood, legs (half/full).</p></div>
-                    <a href="#" class="hb-btn" onclick="return openTreatwell();">Book Now</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="hb-servicebox">
-                  <figure class="hb-serviceimg"><img src="images/room-2.jpg" alt="Full body"></figure>
-                  <div class="hb-servicecontent">
-                    <h3 class="hb-headingtree">Full Body</h3>
-                    <div class="hb-description"><p>Ask about tailored full-body packages.</p></div>
-                    <a href="#" class="hb-btn" onclick="return openTreatwell();">Book Now</a>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Gallery (kept as template, just images swapped as you like) -->
-      <section id="hb-gallery" class="hb-gallery v2 hb-sectionspace hb-haslayout">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-md-8 col-md-offset-2">
-              <div class="hb-sectionhead mb-50">
-                <div class="hb-sectiontitle">
-                  <h2><span>Clinic</span> Gallery</h2>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xs-12">
-              <div class="hb-gallery-area">
-                <div class="hb-portfolio-head hb-haslayout">
-                  <ul id="hb-filterbale-nav" class="hb-filterbale-nav option-set">
-                    <li><a class="active" data-filter="*" href="javascript:void(0);">ALL</a></li>
-                    <li><a data-filter=".room" href="javascript:void(0);">ROOM</a></li>
-                    <li><a data-filter=".entrance" href="javascript:void(0);">ENTRANCE</a></li>
-                    <li><a data-filter=".waiting" href="javascript:void(0);">WAITING</a></li>
-                  </ul>
-                </div>
-
-                <div id="filter-masonry" class="hb-portfolio-content hb-haslayout">
-                  <div class="masonry-grid room">
-                    <div class="hb-project">
-                      <figure class="hb-galleryimg">
-                        <img src="images/room-1.jpg" alt="Treatment room">
-                        <figcaption class="hb-gallerycontent">
-                          <ul class="list-unstyled hb-roundicon">
-                            <li><a href="images/room-1.jpg" data-fancybox="gallery" class="hb-g-icon hover1"><i class="fas fa-arrows-alt"></i></a></li>
-                          </ul>
-                          <h3>Treatment Room</h3>
-                          <span>ReSKN Clinic</span>
-                        </figcaption>
-                      </figure>
-                    </div>
-                  </div>
-
-                  <div class="masonry-grid entrance">
-                    <div class="hb-project">
-                      <figure class="hb-galleryimg">
-                        <img src="images/front.jpg" alt="Entrance">
-                        <figcaption class="hb-gallerycontent">
-                          <ul class="list-unstyled hb-roundicon">
-                            <li><a href="images/front.jpg" data-fancybox="gallery" class="hb-g-icon hover1"><i class="fas fa-arrows-alt"></i></a></li>
-                          </ul>
-                          <h3>Entrance</h3>
-                          <span>Windsor</span>
-                        </figcaption>
-                      </figure>
-                    </div>
-                  </div>
-
-                  <div class="masonry-grid waiting">
-                    <div class="hb-project">
-                      <figure class="hb-galleryimg">
-                        <img src="images/waiting.jpg" alt="Waiting area">
-                        <figcaption class="hb-gallerycontent">
-                          <ul class="list-unstyled hb-roundicon">
-                            <li><a href="images/waiting.jpg" data-fancybox="gallery" class="hb-g-icon hover1"><i class="fas fa-arrows-alt"></i></a></li>
-                          </ul>
-                          <h3>Waiting Area</h3>
-                          <span>Refreshments available</span>
-                        </figcaption>
-                      </figure>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- Pricing (four cards, use as highlights) -->
-      <section id="hb-pricingplan" class="hb-pricingplan hb-sectionspace hb-haslayout">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-md-8 col-md-offset-2">
-              <div class="hb-sectionhead mb-50">
-                <div class="hb-sectiontitle">
-                  <h2><span>Treatment zones &</span> Prices</h2>
-                </div>
-              </div>
-            </div>
-
-            <div class="hb-pricingplan-area">
-              <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="hb-pricingbox">
-                  <figure class="hb-pricing-img"><img src="images/room-1.jpg" alt="Upper lip"></figure>
-                  <div class="pricingcontent">
-                    <h3>Upper Lip <span>£25</span></h3>
-                    <ul class="list-unstyled hb-pricinglist">
-                      <li>Small area</li><li>Quick & gentle</li>
-                    </ul>
-                    <div class="hb-btnarea"><a href="#" class="hb-btn changebtn" onclick="return openTreatwell();">select</a></div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="hb-pricingbox">
-                  <figure class="hb-pricing-img"><img src="images/room-2.jpg" alt="Underarms"></figure>
-                  <div class="pricingcontent">
-                    <h3>Underarms <span>£10</span></h3>
-                    <ul class="list-unstyled hb-pricinglist">
-                      <li>Popular starter</li><li>Fast visit</li>
-                    </ul>
-                    <div class="hb-btnarea"><a href="#" class="hb-btn changebtn" onclick="return openTreatwell();">select</a></div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="hb-pricingbox active">
-                  <figure class="hb-pricing-img"><img src="images/waiting.jpg" alt="Full legs"></figure>
-                  <div class="pricingcontent">
-                    <h3>Full Legs <span>£140</span></h3>
-                    <ul class="list-unstyled hb-pricinglist">
-                      <li>Thigh to ankle</li><li>Great value</li>
-                    </ul>
-                    <div class="hb-btnarea"><a href="#" class="hb-btn changebtn" onclick="return openTreatwell();">select</a></div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xs-12 col-sm-6 col-md-3">
-                <div class="hb-pricingbox">
-                  <figure class="hb-pricing-img"><img src="images/front.jpg" alt="Hollywood"></figure>
-                  <div class="pricingcontent">
-                    <h3>Hollywood <span>£65</span></h3>
-                    <ul class="list-unstyled hb-pricinglist">
-                      <li>Intimate area</li><li>Discreet care</li>
-                    </ul>
-                    <div class="hb-btnarea"><a href="#" class="hb-btn changebtn" onclick="return openTreatwell();">select</a></div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xs-12" style="margin-top:10px;">
-                <p>Also available: Chin £25 • Cheeks £30 • Jawline £35 • Full Face £60 • Half Arms £60 • Full Arms £90 • Chest £90 • Legs £80 • Bikini Line £45 • <strong>Full Body — enquire for package</strong>.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Appointment (expanded with Treatwell popup) -->
-      <section id="hb-appointment" class="hb-appointment hb-sectionspace hb-haslayout">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-md-5">
-              <figure class="hb-appointmentimg">
-                <img src="images/room-2.jpg" alt="Book a patch test">
-              </figure>
-            </div>
-            <div class="col-xs-12 col-md-7">
-              <div class="hb-sectionhead">
-                <div class="hb-sectiontitle">
-                  <h2><span>ReSKN Clinic</span> Appointment</h2>
-                </div>
-              </div>
-              <div class="hb-appointmentcontent">
-                <h3>Want to make a booking or have a question?</h3>
-                <div class="hb-description">
-                  <p><strong>Free consultation & patch test (30 mins)</strong><br>Flexible evenings & weekends in Windsor.</p>
-                </div>
-                <div class="hb-btnarea">
-                  <a href="https://www.treatwell.co.uk/place/reskn-clinic" class="hb-btn"
-                     id="wahanda-online-booking-widget-cta"
-                     onclick="return openTreatwell();">
-                    Book on Treatwell
-                  </a>
-                  <a href="mailto:hello@resknclinic.co.uk" class="hb-btn changebtn">Email us</a>
-                </div>
-
-                <!-- (Optional) Inline widget container (hidden). If you ever want inline, unhide via JS -->
-                <div id="inline-treatwell" style="display:none;margin-top:25px;">
-                  <div id="wahanda-online-booking-widget-iframe"
-                       data-widget-url="https://widget.treatwell.co.uk/place/489475/menu/"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Blog section kept as-is in template (you can remove if not needed) -->
-
-    </main>
-    <!--************************************
-            Main End
-    *************************************-->
-
-    <!--************************************
-            Footer Start
-    *************************************-->
-    <footer id="hb-footer" class="hb-footer hb-haslayout">
-      <div class="hb-footer-area">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-3">
-              <div class="hb-col">
-                <strong class="hb-logo"><a href="#"><img src="images/logo 3.png" alt="ReSKN Clinic"></a></strong>
-                <span class="hb-timeandday">Hours: Fri 11am–8pm, Sat–Sun 10am–8pm</span>
-                <ul class="list-unstyled hb-socialicons">
-                  <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-              <div class="hb-col">
-                <h3>Contacts</h3>
-                <ul class="list-unstyled hb-info">
-                  <li><span>07887 630676 <a href="mailto:hello@resknclinic.co.uk">hello@resknclinic.co.uk</a></span></li>
-                  <li><span>Windsor<em>SL4 4BQ, United Kingdom</em></span></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-              <div class="hb-col">
-                <h3>Newsletter</h3>
-                <div class="hb-emailarea">
-                  <form class="hb-formtheme">
-                    <fieldset>
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="E-mail">
-                        <button type="submit" class="hb-btn">SUBSCRIBE</button>
-                      </div>
-                    </fieldset>
-                  </form>
-                </div>
-                <div class="hb-description"><p>Get clinic updates and offers.</p></div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-3">
-              <div class="hb-col hb-widget">
-                <ul>
-                  <li><a href="#"><img src="images/room-1.jpg" alt="gallery thumb"></a></li>
-                  <li><a href="#"><img src="images/room-2.jpg" alt="gallery thumb"></a></li>
-                  <li><a href="#"><img src="images/waiting.jpg" alt="gallery thumb"></a></li>
-                  <li><a href="#"><img src="images/front.jpg" alt="gallery thumb"></a></li>
-                  <li><a href="#"><img src="images/room-1.jpg" alt="gallery thumb"></a></li>
-                  <li><a href="#"><img src="images/room-2.jpg" alt="gallery thumb"></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="hb-footerbar">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12">
-              <span class="hb-copyright">© ReSKN Clinic. All rights reserved.</span>
-              <ul class="list-unstyled hb-footernav">
-                <li><a href="javascript:void(0);">About</a></li>
-                <li><a href="javascript:void(0);">Terms & Conditions</a></li>
-                <li><a href="javascript:void(0);">Privacy Policy</a></li>
-                <li><a href="#hb-appointment">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!--************************************
-            Footer End
-    *************************************-->
-
-    <!-- Floating mobile Book button -->
-    <div class="floating-book">
-      <a href="https://www.treatwell.co.uk/place/reskn-clinic" class="hb-btn" onclick="return openTreatwell();">Book now</a>
-    </div>
-
-    <span id="back-top" class="text-center rounded-circle fa fa-angle-up"></span>
-    <div id="loader" class="loader-holder">
-      <div class="block">
-        <div class="dot white"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
-      </div>
-    </div>
-  </div>
-  <!--************************************
-        Wrapper End
-  *************************************-->
-
-  <!-- Template JS (unchanged) -->
-  <script src="js/vendor/jquery-library.js"></script>
-  <script src="js/vendor/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/isotope.pkgd.js"></script>
-  <script src="js/isotop.js"></script>
-  <script src="js/countTo.js"></script>
-  <script src="js/appear.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Treatwell popup widget (add once) -->
-  <script src="https://widget.treatwell.co.uk/common/venue-menu/javascript/widget-button.js?v1"></script>
-  <script>
-    (function () {
-      var link = document.createElement("link");
-      link.type = "text/css";
-      link.href = "https://widget.treatwell.co.uk/common/venue-menu/css/widget-button.css";
-      link.rel = "stylesheet";
-      link.media = "screen";
-      document.getElementsByTagName("head")[0].appendChild(link);
-    }());
-
-    // Open Treatwell booking as a popup overlay
-    function openTreatwell() {
-      wahanda.openOnlineBookingWidget("https://widget.treatwell.co.uk/place/489475/menu/");
-      return false;
-    }
-
-    // Optional: show inline widget below the buttons instead of popup
-    function showInlineTreatwell(){
-      var el = document.getElementById('inline-treatwell');
-      if(el){ el.style.display = 'block'; }
-    }
-  </script>
+	<script src="js/vendor/jquery-library.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
