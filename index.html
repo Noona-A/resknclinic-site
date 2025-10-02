@@ -79,6 +79,31 @@
 			height: auto;
 			display: block;
 		}
+		
+		/* Header alignment fix */
+		.hb-topbar .container .row .col-xs-12 {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+		
+		strong.hb-logo {
+			display: flex;
+			align-items: center;
+		}
+		
+		.hb-info-area {
+			display: flex;
+			align-items: center;
+			margin-left: auto;
+			margin-right: 15px;
+		}
+		
+		.hb-topbar .hb-btn {
+			display: flex;
+			align-items: center;
+		}
 	</style>
 </head>
 <body class="hb-home hb-homeone">
@@ -89,13 +114,13 @@
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12">
 							<strong class="hb-logo"><a href="index.html"><img src="images/reskn-logo.png" alt="ReSKN Clinic logo"></a></strong>
-							<a href="https://widget.treatwell.co.uk/place/489475/menu/" target="_blank" class="hb-btn hidden-xs">Book Now</a>
 							<div class="hb-info-area hidden-xs">
 								<ul class="list-unstyled hb-info">
 									<li><i class="ti-location-pin hidden-sm"></i><span>16 Dower Park<em>Windsor, SL4 4BQ</em></span></li>
 									<li><i class="ti-email hidden-sm"></i><span>07887 630676<a href="mailto:info@resknclinic.com">info@resknclinic.com</a></span></li>
 								</ul>
 							</div>
+							<a href="https://widget.treatwell.co.uk/place/489475/menu/" target="_blank" class="hb-btn hidden-xs">Book Now</a>
 						</div>
 					</div>
 				</div>
@@ -440,7 +465,7 @@
 									<li><a href="#services">Services</a></li>
 									<li><a href="#pricing">Pricing</a></li>
 									<li><a href="https://widget.treatwell.co.uk/place/489475/menu/" target="_blank">Book Online</a></li>
-									<li><a href="tel:07887630676">Call Us</a></li>
+									<li><a href="tel:07887630676">Call Us</a>< /li>
 								</ul>
 							</div>
 						</div>
